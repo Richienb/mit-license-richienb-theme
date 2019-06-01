@@ -1,0 +1,17 @@
+{
+  "name": "mit-license-richienb-theme",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "repository": "https://github.com/Richienb/mit-license-richienb-theme.git",
+  "author": "Richie Bendall <richiebendall@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "lint": "stylelint src/*.sass"
+  },
+  "devDependencies": {
+    "stylelint": "^10.0.1",
+    "stylelint-config-recommended": "^2.2.0",
+    "stylelint-scss": "^3.8.0"
+  }
+}

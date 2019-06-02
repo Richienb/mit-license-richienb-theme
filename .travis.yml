@@ -1,20 +1,30 @@
-language:          node_js
+language:                 node_js
 
-node_js:           lts/*
+node_js:                  lts/*
 
-before_install:    npm i -g yarn
+before_install:           npm i -g yarn
 
-install:           yarn install
+install:                  yarn install
 
-script:            yarn lint
-
-before_deploy:     yarn build
+script:
+    - yarn lint
+    - yarn build
+    - cp demo/* dist
 
 deploy:
-    provider:      releases
-    api_key:       $github_token
-    file_glob:     true
-    file:          dist/*
-    skip_cleanup:  true
-    on:
-        tags:      true
+    - provider:           releases
+      api_key:            $github_token
+      file_glob:          true
+      file:               dist/*
+      skip_cleanup:       true
+      on:
+          tags:           true
+
+    - provider:           pages
+      github_token:       $github_token
+      local_dir:          dist
+      committer_from_gh:  true
+      skip_cleanup:       true
+      on:
+          branch:         master
+          tags:           true

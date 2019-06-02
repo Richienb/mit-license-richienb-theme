@@ -1,17 +1,21 @@
 {
-  "name": "mit-license-richienb-theme",
-  "version": "1.0.0",
-  "private": true,
-  "main": "index.js",
-  "repository": "https://github.com/Richienb/mit-license-richienb-theme.git",
-  "author": "Richie Bendall <richiebendall@gmail.com>",
-  "license": "MIT",
-  "scripts": {
-    "lint": "stylelint src/*.sass"
-  },
-  "devDependencies": {
-    "stylelint": "^10.0.1",
-    "stylelint-config-recommended": "^2.2.0",
-    "stylelint-scss": "^3.8.0"
-  }
+    "name": "mit-license-richienb-theme",
+    "version": "1.0.0",
+    "private": true,
+    "main": "index.js",
+    "repository": "https://github.com/Richienb/mit-license-richienb-theme.git",
+    "author": "Richie Bendall <richiebendall@gmail.com>",
+    "license": "MIT",
+    "scripts": {
+        "build:theme": "sass --update src/richienb.sass:dist/richienb.css src/richienb-dark.sass:dist/richienb-dark.css",
+        "build:min": "sass --update --style compressed src/richienb.sass:dist/richienb.min.css src/richienb-dark.sass:dist/richienb-dark.min.css",
+        "build": "yarn build:theme && yarn build:min",
+        "lint": "stylelint src/*.sass"
+    },
+    "devDependencies": {
+        "sass": "^1.20.3",
+        "stylelint": "^10.0.1",
+        "stylelint-config-recommended": "^2.2.0",
+        "stylelint-scss": "^3.8.0"
+    }
 }

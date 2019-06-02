@@ -1,0 +1,20 @@
+language:          node_js
+
+node_js:           lts/*
+
+before_install:    npm i -g yarn
+
+install:           yarn install
+
+script:            yarn lint
+
+before_deploy:     yarn build
+
+deploy:
+    provider:      releases
+    api_key:       $github_token
+    file_glob:     true
+    file:          dist/*
+    skip_cleanup:  true
+    on:
+        tags:      true

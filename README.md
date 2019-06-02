@@ -3,5 +3,5 @@ Richienb Spec as a theme for the [MIT License project](https://github.com/remy/m
 s
 ## Demo
 
-- [Light Version](https://richienb.github.io/mit-license-richienb-theme/demo.html)
-- [Dark Version](https://richienb.github.io/mit-license-richienb-theme/demo-dark.html)
+- [Light Version](https://richienb.github.io/mit-license-richienb-theme/demo)
+- [Dark Version](https://richienb.github.io/mit-license-richienb-theme/demo-dark)

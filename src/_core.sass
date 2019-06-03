@@ -15,7 +15,7 @@ html
 
   ::selection
     // Set selection colour
-    background-color: $primary
+    background-color: $selection
     color: $selection-fore
 
   &::-webkit-scrollbar
@@ -53,54 +53,54 @@ html
         // Darken even more if clicked
         background-color: rgba(0, 0, 0, 0.5)
 
-article
-  // Main text
-  box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12)
-  background-color: $card
-  color: $card-fore
-  border-radius: 4px
-  margin: 1.5rem
-  padding: 2rem
-  min-height: calc(100vh - 10rem)
+  article
+    // Main text
+    box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12)
+    background-color: $card
+    color: $card-fore
+    border-radius: 4px
+    margin: 1.5rem
+    padding: 2rem
+    min-height: calc(100vh - 10rem)
 
-  &::before
-    // Ribbon
-    content: ""
-    top: 0
-    left: 0
-    z-index: -1
-    background-color: $primary
-    width: 100%
-    height: 10rem
-    position: absolute
+    &::before
+      // Ribbon
+      content: ""
+      top: 0
+      left: 0
+      z-index: -1
+      background-color: $primary
+      width: 100%
+      height: 10rem
+      position: absolute
 
-  #gravatar
-    // Gravatar icon
-    float: right
-    border-radius: 50%
-    margin-top: 1.7em
-    margin-right: 1em
+    #gravatar
+      // Gravatar icon
+      float: right
+      border-radius: 50%
+      margin-top: 1.7em
+      margin-right: 1em
 
-  h1
-    // Title
-    font-size: 3.75rem
-    line-height: 3.75rem
-    font-weight: 300
-    letter-spacing: -0.0083333333em
-
-footer
-  // Footer with link
-  text-align: center
+    h1
+      // Title
+      font-size: 3.75rem
+      line-height: 3.75rem
+      font-weight: 300
+      letter-spacing: -0.0083333333em
 
 p
-  // Other text
-  font-size: 1rem
-  line-height: 1.5rem
-  font-weight: 400
-  letter-spacing: 0.03125em
+    // Other text
+    font-size: 1rem
+    line-height: 1.5rem
+    font-weight: 400
+    letter-spacing: 0.03125em
 
 a
-  // Links
-  color: $link
+    // Links
+    color: $link
 
-@import "../node_modules/normalize.css/normalize"
+footer
+    // Footer with link
+    text-align: center
+
+@import ../node_modules/normalize.css/normalize
